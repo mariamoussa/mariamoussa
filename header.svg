@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" width="1200" height="260" role="img" aria-label="Maria Moussa, Senior Full Stack Engineer and Technical Lead">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#05060D"/>
+      <stop offset="55%" stop-color="#0E1A33"/>
+      <stop offset="100%" stop-color="#123047"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6EE7FF"/>
+      <stop offset="55%" stop-color="#D9E1FF"/>
+      <stop offset="100%" stop-color="#FFD79A"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6EE7FF" stop-opacity=".55"/>
+      <stop offset="50%" stop-color="#A78BFA" stop-opacity=".45"/>
+      <stop offset="100%" stop-color="#6EE7FF" stop-opacity=".55"/>
+    </linearGradient>
+    <radialGradient id="neb" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#A78BFA" stop-opacity=".38"/>
+      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="neb2" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#6EE7FF" stop-opacity=".30"/>
+      <stop offset="100%" stop-color="#6EE7FF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="260" fill="url(#sky)"/>
+  <ellipse cx="230" cy="70" rx="300" ry="150" fill="url(#neb)">
+    <animate attributeName="rx" values="300;340;300" dur="14s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="980" cy="200" rx="300" ry="140" fill="url(#neb2)">
+    <animate attributeName="ry" values="140;170;140" dur="17s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- drifting stars -->
+  <g fill="#E8ECF3">
+    <circle cx="90" cy="46" r="1.5"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.1s" repeatCount="indefinite"/></circle>
+    <circle cx="210" cy="188" r="1.2"><animate attributeName="opacity" values="1;0.25;1" dur="4.3s" repeatCount="indefinite"/></circle>
+    <circle cx="330" cy="62" r="1"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.6s" repeatCount="indefinite"/></circle>
+    <circle cx="470" cy="212" r="1.4"><animate attributeName="opacity" values="1;0.2;1" dur="5.2s" repeatCount="indefinite"/></circle>
+    <circle cx="610" cy="40" r="1.1"><animate attributeName="opacity" values="0.25;1;0.25" dur="3.8s" repeatCount="indefinite"/></circle>
+    <circle cx="742" cy="196" r="1.6" fill="#FFD79A"><animate attributeName="opacity" values="1;0.3;1" dur="4.9s" repeatCount="indefinite"/></circle>
+    <circle cx="868" cy="58" r="1.2"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.4s" repeatCount="indefinite"/></circle>
+    <circle cx="1010" cy="90" r="1" fill="#FFD79A"><animate attributeName="opacity" values="1;0.2;1" dur="6.1s" repeatCount="indefinite"/></circle>
+    <circle cx="1128" cy="176" r="1.5"><animate attributeName="opacity" values="0.2;1;0.2" dur="4.1s" repeatCount="indefinite"/></circle>
+    <circle cx="150" cy="130" r="1"><animate attributeName="opacity" values="0.4;1;0.4" dur="5.6s" repeatCount="indefinite"/></circle>
+    <circle cx="1080" cy="36" r="1.3"><animate attributeName="opacity" values="1;0.3;1" dur="3.3s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- shooting star -->
+  <g opacity="0">
+    <line x1="0" y1="0" x2="70" y2="26" stroke="#E8ECF3" stroke-width="1.6" stroke-linecap="round"/>
+    <animateTransform attributeName="transform" type="translate" values="120,10; 900,300" dur="1.5s" begin="3s;12s;25s" repeatCount="1"/>
+    <animate attributeName="opacity" values="0;1;0" dur="1.5s" begin="3s;12s;25s" repeatCount="1"/>
+  </g>
+
+  <text x="60" y="118" font-family="'Trebuchet MS',Verdana,sans-serif" font-size="60" font-weight="700" letter-spacing="1" fill="url(#ink)">MARIA MOUSSA</text>
+  <text x="63" y="152" font-family="'Courier New',monospace" font-size="17" letter-spacing="5" fill="#96A0B2">SENIOR FULL STACK ENGINEER &#183; TECHNICAL LEAD</text>
+
+  <!-- rotating taglines -->
+  <g font-family="'Courier New',monospace" font-size="18" fill="#6EE7FF">
+    <text x="63" y="200" opacity="1">&#62; I build the systems companies run on.
+      <animate attributeName="opacity" values="0;1;1;0;0;0;0;0" dur="16s" repeatCount="indefinite"/>
+    </text>
+    <text x="63" y="200" opacity="0">&#62; Payment rails. Internal platforms. Stock management.
+      <animate attributeName="opacity" values="0;0;0;1;1;0;0;0" dur="16s" repeatCount="indefinite"/>
+    </text>
+    <text x="63" y="200" opacity="0">&#62; Six years across fintech, healthcare and e-commerce.
+      <animate attributeName="opacity" values="0;0;0;0;0;1;1;0" dur="16s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <path d="M0 232 Q 150 212 300 232 T 600 232 T 900 232 T 1200 232 V260 H0 Z" fill="url(#wave)">
+    <animate attributeName="d"
+      values="M0 232 Q 150 212 300 232 T 600 232 T 900 232 T 1200 232 V260 H0 Z;
+              M0 232 Q 150 252 300 232 T 600 232 T 900 232 T 1200 232 V260 H0 Z;
+              M0 232 Q 150 212 300 232 T 600 232 T 900 232 T 1200 232 V260 H0 Z"
+      dur="9s" repeatCount="indefinite"/>
+  </path>
+</svg>
